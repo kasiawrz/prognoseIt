@@ -1,2 +1,5 @@
 .idea/
 .sass-cache/
+static/libs/materialize-src/sass/
+node_modules/
+bower_components/*/*
