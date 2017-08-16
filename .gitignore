@@ -3,3 +3,4 @@
 static/libs/materialize-src/sass/
 node_modules/
 bower_components/*/*
+npm-debug.log
