@@ -1,4 +1,32 @@
+@import 'variables';
+
+* {
+  overflow: hidden;
+  color: $font-color;
+
+}
+.header {
+  background-image: url("../../static/assets/background.jpeg");
+  nav {
+    background-color: transparent;
+    h1 {
+      font-size: 5em;
+    }
+  }
+}
+
+.btn {
+  border-radius: 90px;
+}
 
 .menu {
+  font-size: 3rem;
+}
 
+/* events section */
+.events {
+  background-color: $bc-navy;
+  .events-item {
+    overflow: hidden;
+  }
 }
