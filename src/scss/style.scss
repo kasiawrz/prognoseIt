@@ -1,3 +1,26 @@
 body{
-
+    background-color: #0b3953;
 }
+
+.team {
+    h3 {
+        color: #4fe3c1;
+        text-align: center;
+    }
+    
+    .avatar__picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: brown;
+    }
+    
+    .avatar__name {
+        color: #4fe3c1;
+    }
+    
+    .avatar__description {
+        color: #fff;
+    }
+}
+
