@@ -1,3 +1,42 @@
-body{
+$background-color: #0b3953;
+$hedings-color: #4fe3c1;
 
+body{
+    background-color: $background-color;
 }
+
+.team {
+    h3 {
+        color: $hedings-color;
+        text-align: center;
+    }
+    
+    .avatar__picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: brown;
+    }
+    
+    .avatar__name {
+        color: $hedings-color
+    }
+    
+    .avatar__description {
+        color: #fff;
+    }
+}
+
+footer {
+    ul li {
+        display: inline-block;
+        margin-right: 20px;
+        color: $hedings-color
+    }
+    
+    ul li ul li {
+        display: block;
+        color: #fff;
+    }
+}
+
