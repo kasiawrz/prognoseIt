@@ -1,3 +1,157 @@
-body{
+@import "reset";
 
+body {
+  background-color: #0B3954;
+}
+
+html {
+  font-size: 100%;
+}
+
+.rules {
+  border-top: solid 3px #50e3c2;
+  margin: 20px 15px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  &__container{
+    width: 90%;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+
+    span {
+      border-bottom: 2px solid #50e3c2;
+      padding: 0 1px 3px;
+    }
+  }
+
+  &__grid {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box {
+    width: 90%;
+    background-color: #0567a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__icon {
+    font-size: 50px !important;
+  }
+
+  &__text {
+    display: none;
+  }
+}
+
+.success {
+  border-top: solid 3px #50e3c2;
+  margin: 20px 15px 0;
+  padding-top: 40px;
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+
+    span {
+      border-bottom: 2px solid #50e3c2;
+      padding: 0 1px 3px;
+    }
+  }
+  &__text{
+    color: #fff;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  &__button{
+  background-color: #50e3c2 ;
+  border-radius: 90px;
+  width: 70%;
+height: 45px;
+line-height: 45px;
+font-weight: bolder;
+
+  }
+}
+
+/*.s*/
+// $phone: "only screen and (max-width : 600px)";
+$tablet: "only screen and (min-width : 601px)"; /* .m --> > 600px */
+$desktop: "only screen and (min-width : 993px)"; /* .l --> > 992px */
+$large: "only screen and (min-width : 1201px)";
+/* .xl --> > 1200px */
+@media #{$tablet} {
+  .rules {
+    border-top: solid 3px #50e3c2;
+    margin: 20px 15px 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    &__container {
+      width: 100% !important;
+    }
+
+    &__title{
+    display: none;
+    }
+
+    &__grid {}
+
+
+    &__box {
+      width: 100%;
+      height: 290px;
+      background-color: #0567a0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+
+      &--right {
+        margin-right: 5px;
+      }
+    }
+
+    &__icon {
+      font-size: 50px !important;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      display: inline;
+      font-size: 12px;
+      line-height: 140%;
+      text-align: center;    }
+  }
+}
+
+@media #{$desktop} {
+.rules{
+  &__icon {
+    font-size: 60px !important;
+    padding-bottom: 30px;
+  }
+  }
+}
+
+@media #{$large} {
+  .rules {
+      &__box {
+        height: 250px;
+      }
+    &__text {
+      font-size: 15px;
+    }
+  }
 }
