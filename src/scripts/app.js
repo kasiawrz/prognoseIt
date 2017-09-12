@@ -40,4 +40,6 @@ indicators: true
         $('.rules__text').css("display", "inline");
     }
   });
+
+
 });

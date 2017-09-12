@@ -14,9 +14,9 @@ html {
   padding-top: 40px;
   padding-bottom: 20px;
 
-  &__container{
-    width: 90%;
-  }
+  // &__container {
+  //   width: 90%;
+  // }
 
   &__title {
     color: #fff;
@@ -67,23 +67,68 @@ html {
       border-bottom: 2px solid #50e3c2;
       padding: 0 1px 3px;
     }
+
+    &--desktop{
+      display: none;
+      color: #50e3c2;
+    }
   }
-  &__text{
+
+  &__text {
     color: #fff;
     font-size: 14px;
-    line-height: 120%;
+    line-height: 150%;
+    text-align: center;
   }
-  &__button{
-  background-color: #50e3c2 ;
-  border-radius: 90px;
-  width: 70%;
-height: 45px;
-line-height: 45px;
-font-weight: bolder;
 
+  &__button {
+    background-color: #50e3c2;
+    border-radius: 90px;
+    width: 70%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bolder;
   }
 }
 
+.slider-suc {
+  background-color: #0567a0;
+
+  &__title {
+    padding: 25px 0;
+    color: #fff;
+  }
+}
+
+.success-desktop {
+  min-height: 300px;
+  background-color: #0567a0;
+  border-bottom: 2px solid #fff;
+
+  &__item {
+    padding: 1px !important;
+      padding-bottom: 0px !important;
+    border-right: 2px solid #fff;
+
+    &--last {
+      border-right: none;
+    }
+  }
+
+  &__title {
+    padding: 20px 10px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    min-height: 80px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 140%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
 /*.s*/
 // $phone: "only screen and (max-width : 600px)";
 $tablet: "only screen and (min-width : 601px)"; /* .m --> > 600px */
@@ -101,12 +146,12 @@ $large: "only screen and (min-width : 1201px)";
       width: 100% !important;
     }
 
-    &__title{
-    display: none;
+    &__title {
+      display: none;
+
     }
 
     &__grid {}
-
 
     &__box {
       width: 100%;
@@ -132,24 +177,46 @@ $large: "only screen and (min-width : 1201px)";
       display: inline;
       font-size: 12px;
       line-height: 140%;
-      text-align: center;    }
+      text-align: center;
+    }
+  }
+
+  .success{
+    border-bottom: solid 3px #50e3c2;
+
+    &__title{
+      display: none;
+      &--desktop{
+        display: block;
+        color: #50e3c2;
+        padding-bottom: 30px;
+      }
+    }
+    &__button{
+      margin-bottom: 30px;
+    }
+    &__row{
+      &--desktop{
+        margin-bottom: 5px !important;
+      }
+    }
   }
 }
 
 @media #{$desktop} {
-.rules{
-  &__icon {
-    font-size: 60px !important;
-    padding-bottom: 30px;
-  }
+  .rules {
+    &__icon {
+      font-size: 60px !important;
+      padding-bottom: 30px;
+    }
   }
 }
-
 @media #{$large} {
   .rules {
-      &__box {
-        height: 250px;
-      }
+    &__box {
+      height: 250px;
+    }
+
     &__text {
       font-size: 15px;
     }
