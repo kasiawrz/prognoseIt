@@ -1,32 +1,51 @@
+@import '../../static/libs/materialize-src/sass/materialize';
 @import 'variables';
 
 * {
   overflow: hidden;
   color: $font-color;
-
 }
-.header {
+
+header {
+  min-height: 100vh;
   background-image: url("../../static/assets/background.jpeg");
+  background-position: center;
+  background-size: cover;
   nav {
     background-color: transparent;
-    h1 {
-      font-size: 5em;
-    }
+    padding: 10px;
   }
 }
 
-.btn {
-  border-radius: 90px;
+section.info {
+
+  .btn {
+    border-radius: 90px;
+    margin: 20vh;
+    width: 300px;
+    min-height: 70px;
+  }
 }
 
-.menu {
-  font-size: 3rem;
-}
+
+
+//h2 {
+//  color: $teal("lighten-3");
+//}
+//
+//.menu {
+//  font-size: 3rem;
+//}
 
 /* events section */
-.events {
+section.events {
   background-color: $bc-navy;
+  height: 35vh;
   .events-item {
-    overflow: hidden;
+    min-height: 90%;
+    img {
+      object-fit: cover;
+      height: inherit;
+    }
   }
 }

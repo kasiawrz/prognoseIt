@@ -20,14 +20,37 @@
 <body>
 
 <!-- header -->
-<header class="header s12">
-  <div class="container center-align">
+<header hidden>
+  <div class="container">
+      <nav>
+          <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Prognose<span>IT</span></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#">Jak grać</a></li>
+                  <li><a href="#">Wydarzenia</a></li>
+                  <li><a href="#">Renkingi</a></li>
+                  <li><a href="#">O nas</a></li>
+              </ul>
+          </div>
+      </nav>
 
-  <nav class="menu row">
-    <i class="material-icons col s3">&#xE5CD;</i>
-    <h1 class="col s4">PrognoseIT</h1>
-    <i class="material-icons col s3">&#xE7FD;</i>
-  </nav>
+      <section class="center-align info">
+          <h2>Załóż się o przyszłość!</h2>
+          <p class="flow-text">Bądź na bieżąco z tym, co dzieje się w Polsce i na świecie. Wykorzystaj swoją wiedzę i doświadczenie - dołącz do nas i sprawdź się!</p>
+          <a class="waves-effect waves-light btn">Chcę zagrać</a>
+      </section>
+  </div>
+</header>
+
+<section class="graph row">
+    .col
+</section>
+
+<!--<nav class="menu row">-->
+    <!--<i class="material-icons col s3">&#xE5CD;</i>-->
+    <!--<h1 class="col s4">PrognoseIT</h1>-->
+    <!--<i class="material-icons col s3">&#xE7FD;</i>-->
+  <!--</nav>-->
     <!--<div class="hide-on-med-and-up">-->
 
       <!--<i class="material-icons">close</i>-->
@@ -40,21 +63,15 @@
       <!--<li class="menu__item">profil</li>-->
     <!--</ul>-->
 
-    <section class="CTA">
-      <h2>Zagraj z nami o nowe jutro!</h2>
-      <p class="flow-text">Bądź na bieżąco z tym, co dzieje się w Polsce i na świecie. Wykorzystaj swoją wiedzę i doświadczenie - dołącz do nas i sprawdź się!</p>
-      <a class="waves-effect waves-light btn s8">załóż się o przyszłość</a>
-    </section>
-  </div>
-</header>
+<div class="divider"></div>
 
-<section class="events container-wide center-align">
+<section class="events center-align">
   <h4>Najnowsze wydarzenia</h4>
-  <div class="events-item row">
-    <img class="col s6" src="../static/assets/events/kaczynski.jpg" alt="kacz">
-    <img class="col s6 hide-on-small-only" src="../static/assets/events/trump.jpg" alt="trump">
-    <img class="col s6 hide-on-small-only" src="../static/assets/events/putin.jpg" alt="putin">
-  <!--</div>-->
+  <div class="slider container row">
+    <!--<img class="col s6" src="../static/assets/events/kaczynski.jpg" alt="kacz">-->
+    <!--<img class="col s6 hide-on-small-only" src="../static/assets/events/trump.jpg" alt="trump">-->
+    <!--<img class="col s6 hide-on-small-only" src="../static/assets/events/putin.jpg" alt="putin">-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
   <!--<div class="carousel carousel-slider">-->
     <!--<a class="carousel-item active" href="#one!">a<img src="../static/assets/events/trump.jpg"></a>-->
     <!--<a class="carousel-item" href="#two!">b<img src="../static/assets/events/trump.jpg"></a>-->
@@ -63,16 +80,26 @@
   <!--</div>-->
   <!--USUN-->
 
-  <!--<div class="carousel">-->
-    <!--<a class="carousel-item active" href="#one!">lol<img src="https://lorempixel.com/250/250/nature/1"></a>-->
-    <!--<a class="carousel-item" href="#two!">lol<img src="https://lorempixel.com/250/250/nature/2"></a>-->
-    <!--<a class="carousel-item" href="#three!">lol<img src="https://lorempixel.com/250/250/nature/3"></a>-->
-    <!--<a class="carousel-item" href="#four!">lol<img src="https://lorempixel.com/250/250/nature/4"></a>-->
-    <!--<a class="carousel-item" href="#five!">lol<img src="https://lorempixel.com/250/250/nature/5"></a>-->
-  <!--</div>-->
+      <div class="row">
+          <div class="slider-item col m3">
+              <a href="#one!"><img src="http://media2.intoday.in/indiatoday/images/stories/china-doklam_647_070917063348.jpg"></a>
+          </div>
+          <div class="slider-item col s12 m3">
+              <a href="#two!"><img src="http://static.reuters.com/resources/media/global/assets/images/20170912/20170912_7692393020170912133848.jpg"></a>
+          </div>
+          <div class="slider-item col s12 m3">
+              <a href="#three!"><img src="http://s3.amazonaws.com/armstrongeconomics-wp/2014/03/south-korea-2-1024x768.jpg"></a>
+          </div>
+          <div class="slider-item col s12 m3">
+              <a href="#four!"><img src="http://discoveringice.com/wp-content/uploads/2013/10/Cartagena-Colombia.jpg"></a>
+          </div>
+          <div class="slider-item__hidden col s12 m3">
+              <a href="#four!"><img src="http://discoveringice.com/wp-content/uploads/2013/10/Cartagena-Colombia-3.jpg"></a>
+          </div>
+      </div>
 
 </section>
-
+<div class="divider"></div>
 
   <a class="waves-effect waves-light btn s4"><i class="material-icons left">cloud</i>button</a>
   <a class="waves-effect waves-light btn s4"><i class="material-icons right">cloud</i>button</a>
@@ -82,5 +109,4 @@
   <script src="../static/libs/materialize-src/js/bin/materialize.min.js"></script>
 
 </body>
-
 </html>
